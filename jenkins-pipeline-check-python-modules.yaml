@@ -3,6 +3,5 @@ pipeline:
   stages:
     - stage: "Example"
       steps:
-        script:
-          - run: python -m pip list
-            run: python --version
+         - run: python -m pip list
+           run: python --version
