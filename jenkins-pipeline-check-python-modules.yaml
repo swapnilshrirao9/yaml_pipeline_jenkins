@@ -1,18 +1,8 @@
 pipeline:
-  agent: any 
+  agent: python2_agent
   stages:
     - stage: "Example"
       steps:
         script:
-          - echo "Hello World"
-          # - withEnv: "['KEY=VAL']"
-          #   script:
-          #     - echo $KEY
-  # stages:
-  
-    # - stage: List Python Modules
-    #   agent: python2_agent
-    #   steps:
-    #     - run: python -m pip list
-    #       run: python --version
-    #       displayName: List Installed Python Modules
+          - run: python -m pip list
+            run: python --version
