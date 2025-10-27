@@ -1,9 +1,12 @@
 pipeline:
-  agent: any
-stages:
-  - stage: "Test"
-    steps:
-      - echo "hello"
+  stages:
+    - stage: "Example"
+      steps:
+        script:
+          - echo "Hello World"
+          # - withEnv: "['KEY=VAL']"
+          #   script:
+          #     - echo $KEY
   # stages:
   
     # - stage: List Python Modules
