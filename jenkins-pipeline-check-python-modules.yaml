@@ -1,0 +1,10 @@
+pipeline:
+  agent: any
+
+  stages:
+    - stage: List Python Modules
+      agent: python2_agent
+      steps:
+        - run: python -m pip list
+          run: python --version
+          displayName: List Installed Python Modules
