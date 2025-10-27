@@ -1,7 +1,7 @@
 pipeline:
   stages:
     - stage: "Example"
-      agent: "python2_agent"
+      agent: any
       steps:
         script:
           - echo "Hello World"
