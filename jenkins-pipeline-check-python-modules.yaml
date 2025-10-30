@@ -1,8 +1,7 @@
 pipeline:
-  agent: any
+  agent:
+    label: 'python2_agent'
   stages:
     - stage: "Example"
-      agent: python2_agent
       steps:
-        script:
-          - shell 'python --version'
+        - sh: 'python --version'
