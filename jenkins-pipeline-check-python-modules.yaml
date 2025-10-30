@@ -1,5 +1,5 @@
 pipeline:
-  agent: any
+  agent: python2_agent
   stages:
     - stage: "Example"
       steps:
