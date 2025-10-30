@@ -4,4 +4,4 @@ pipeline:
   stages:
     - stage: "Example"
       steps:
-        - sh: 'python --version'
+        - shell 'python --version'
