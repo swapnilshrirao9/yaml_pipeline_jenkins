@@ -1,7 +1,10 @@
+
 pipeline:
-  agent:
-    any: true
+  agent: any
   stages:
-    - stage: "Hello World"
+    - stage: "Run Shell Commands"
       steps:
-        - sh: "echo 'Hello, Jenkins!'"
+        - script:
+            - sh: "echo Starting shell stage..."
+            - sh: "ls -l"
+            - sh: "echo Shell stage finished."
