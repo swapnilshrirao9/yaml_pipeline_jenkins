@@ -4,4 +4,4 @@ pipeline:
   stages:
     - stage: "Hello World"
       steps:
-        - sh: echo "Hello, Jenkins!"
+        - sh: "echo 'Hello, Jenkins!'"
