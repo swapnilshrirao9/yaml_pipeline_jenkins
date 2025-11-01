@@ -2,6 +2,11 @@
 pipeline:
   agent: 
     label: "python2_agent"
+  security:
+    scriptApproval:
+     approvedSignatures:
+      - "staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods putAt java.lang.Object\
+        \ java.lang.String java.lang.Object"
   stages:
     - stage: "Run Shell Commands"
       steps:
